@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <encoding>UTF-8</encoding>
+        <documentTitle>QA Automation Report</documentTitle>
+        <reportName>BDD Regression Report — Astha Priya Jha</reportName>
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+        <js></js>
+        <css>
+            .brand-logo { display: none; }
+        </css>
+    </configuration>
+</extentreports>

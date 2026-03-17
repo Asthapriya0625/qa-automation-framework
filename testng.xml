@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+  TestNG Suite Configuration
+  
+  Parallel execution modes:
+    parallel="false"   → sequential (safe default)
+    parallel="methods" → parallel scenarios (set DataProvider parallel=true in TestRunner)
+  
+  Run specific tags:
+    mvn test -Dcucumber.filter.tags="@smoke"
+    mvn test -Dcucumber.filter.tags="@regression"
+    mvn test -Dcucumber.filter.tags="@login"
+-->
+<suite name="QA Automation Suite" verbose="1" parallel="false">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env" value="staging"/>
+    <parameter name="headless" value="false"/>
+
+    <test name="Regression Suite">
+        <classes>
+            <class name="com.astha.qa.runners.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>
