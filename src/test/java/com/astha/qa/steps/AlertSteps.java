@@ -39,13 +39,13 @@ public class AlertSteps {
     @When("the user accepts the alert")
     public void theUserAcceptsAlert() {
         log.info("Step: Accept alert");
-        alertPage.acceptAlert();
+        alertPage.clickAcceptAlert();
     }
 
     @When("the user dismisses the alert")
     public void theUserDismissesAlert() {
         log.info("Step: Dismiss alert");
-        alertPage.dismissAlert();
+        alertPage.clickDismissAlert();
     }
 
     @When("the user types {string} in the prompt and accepts")

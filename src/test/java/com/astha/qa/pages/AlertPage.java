@@ -46,13 +46,13 @@ public class AlertPage extends BasePage {
         return this;
     }
 
-    public AlertPage acceptAlert() {
+    public AlertPage clickAcceptAlert() {
         log.info("Accepting alert");
         acceptAlert();
         return this;
     }
 
-    public AlertPage dismissAlert() {
+    public AlertPage clickDismissAlert() {
         log.info("Dismissing alert/confirm");
         super.dismissAlert();
         return this;
